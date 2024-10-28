@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+* , *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+}
+main {
+    width: 35rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+}
+button {
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #D7DCEF;
+    color: #5A6076;
+    border: none;
+}
+button:hover {
+    transition: all .3s ease;
+    filter: contrast(80%);
+}
+/* Estilos calculadora */
+
+/* Botones */
+#igual {
+    background-color: #fff;
+}
+#mas {
+    background-color: #63DE77;
+    color: #fff;
+}
+#multiplicar {
+    background-color: #FFC804;
+    color: #fff;
+}
+#dividir {
+    background-color: #2388FF;
+    color: #fff;
+}
+#menos {
+    background-color: #FF445A;
+    color: #fff;
+}
+#borrar {
+    background-color: #1F2B54;
+    color: #fff;
+}
+/* Display */
+#display {
+    background-color: #2388FF;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
+    height: 6rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 30rem;
+    max-width: 29.6rem;
+}
