@@ -17,8 +17,23 @@ botones.forEach((boton) => {
 
 
 resultadoBoton.addEventListener("click", () => {
-    let resultado = operar(expresion);
-    display.innerText = resultado;
+    try {
+        expresion = operar(expresion);
+    } catch (error) {
+        expresion = NaN;
+    }
+
+    if (isNaN(expresion)) {
+        display.innerText = "No lo intentes :)";
+        setTimeout(() => {
+            display.innerText = ""
+            expresion = "";
+        }, 500)
+        console.log(expresion);
+        return;
+    }
+    
+    display.innerText = expresion;
 })
 
 borrar.addEventListener("click", () => {
